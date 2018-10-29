@@ -6,3 +6,4 @@
 :---|---:
 1| https://github.com/romtar2000/rom-tar-odi_B/tree/master/HW1
 2| https://github.com/romtar2000/rom-tar-odi_B/blob/master/HW2.ipynb
+3| https://github.com/romtar2000/rom-tar-odi_B/blob/master/papercorpus.ipynb
