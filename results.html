@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Спасибо за ответ!</title>
+</head>
+
+<body>
+<center>
+	<h1>Спасибо за ответ, {{ name }}!</h1>
+	<p>Мы записали Bаш ответ: {{ translation }}.</p>
+	{% if "мужской" in gender and "р" in translation %}
+		<p>Этот ответ типичен для мужчин</p>
+	{% elif "женский" in gender and "ц" in translation %}
+		<p>Этот ответ типичен для женщин</p>
+	{% else %}
+		<p>Нетипичный ответ для вашего пола!</p>
+	{% endif %}
+	{% if age|int <= 40 and "тысяча" in translation %}
+		<p>Этот ответ типичен для возраста {{ age }}</p>
+	{% elif age|int >= 40 and "кликкликкин" in translation %}
+		<p>Этот ответ типичен для возраста {{ age }}</p>
+	{% else %}
+		<p>Нетипичный ответ для вашего возраста!</p>
+	{% endif %}
+</center>
+</body>
+
+</html>
