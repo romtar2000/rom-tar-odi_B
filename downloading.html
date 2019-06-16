@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+
+<body>
+<center>
+	<h1>Спасибо за помощь науке!</h1>
+	<p>Мы приняли Ваши материалы: {{ uploadment }}.</p>
+	<h2>Если хотите, можете ознакомиться с другими материалами<h2>
+	<ul>
+	<p>
+	{% for item in corpus %}
+	{{ item }}<br>
+	{% endfor %}
+	</p>
+	</ul>
+</center>
+</body>
+
+</html>
