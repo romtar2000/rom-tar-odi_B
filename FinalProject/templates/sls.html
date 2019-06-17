@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Социолингвистическая статистика</title>
+</head>
+
+<body>
+<center>
+	<p>Среди добавивших материалы - мужчин {{ men }} %</p>
+	<p>Среди добавивших материалы - женщин {{ women }} %</p>
+	<p>Средний возраст добавивших - {{ meanage }}</p>
+	<h1>График добавивших</h1>
+	<img src="images/graph.png"></img>
+	<ul>
+		{% for name, url in urls.items() %}
+		<li><a href={{ url }}>{{ name }}</a></li>
+		{% endfor %}
+	</ul>
+</center>
+</body>
+
+</html>

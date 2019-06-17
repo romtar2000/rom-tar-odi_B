@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Найденные материалы</title>
+</head>
+
+<body>
+<center>
+	<p>Вы искали материалы: {{ query }}.</p>
+	<ul>
+	<p>
+	{% for incidence in materials %}
+	{{ incidence }}<br>
+	{% endfor %}
+	</p>
+	</ul>
+	<ul>
+		{% for name, url in urls.items() %}
+		<li><a href={{ url }}>{{ name }}</a></li>
+		{% endfor %}
+	</ul>
+</center>
+</body>
+
+</html>

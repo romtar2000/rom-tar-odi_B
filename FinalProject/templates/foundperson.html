@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Найденные люди</title>
+</head>
+
+<body>
+<center>
+	<p>Вы искали людей: {{ query }}.</p>
+	<ul>
+	<p>
+	{% for profile in people %}
+	{{ profile }}<br>
+	{% endfor %}
+	</p>
+	</ul>
+	<ul>
+		{% for name, url in urls.items() %}
+		<li><a href={{ url }}>{{ name }}</a></li>
+		{% endfor %}
+	</ul>
+</center>
+</body>
+
+</html>
